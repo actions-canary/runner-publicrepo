@@ -1,0 +1,14 @@
+name: self-hosted-linux
+
+on:
+  workflow_dispatch:
+
+jobs:
+  basic:
+    runs-on: [self-hosted, linux, public]
+    name: linux
+    steps:
+    - name: OS info
+      run: uname -a
+    - name: env
+      run: env
