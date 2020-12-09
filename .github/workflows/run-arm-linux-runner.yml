@@ -25,7 +25,7 @@ jobs:
             apt-get install -q -y curl
             apt-get install -q -y wget
           run: |
-            ORG=bbq-beets
+            ORG=actions-canary
             REPO=runner-publicrepo
             # We need a special token with permissions to interact with the 'runners/registration-token' endpoint
             GITHUB_TOKEN=${{ secrets.ORG_TOKEN }}
