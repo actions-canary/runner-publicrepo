@@ -100,7 +100,7 @@ jobs:
             # Self-hosted-linux runs under a few seconds, let's give it an order of magnitude more time
             # Because runnergroup-test does not allow public repositories, the workflow *will fail* with the following message:
             # "No runner matching the specified labels was found: self-hosted, linux, public."
-            sleep 60
+            sleep 300
             
             echo "Remove runner"
             kill $RUNNER_PID
